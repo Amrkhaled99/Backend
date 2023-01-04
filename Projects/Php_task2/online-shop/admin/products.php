@@ -61,30 +61,30 @@ $products = getProducts();
   </thead>
   <tbody>
   <?php
-  foreach ($products as $p) {
+  foreach ($products as $product) {
       ?>
     <tr>
         
-      <th scope="row"><?=$p['id'] ?></th>
-      <td><?=$p['name'] ?></td>
-      <td><?=$p['description'] ?></td>
-      <td><?=$p['image_url'] ?></td>
-      <td><?=$p['price'] ?></td>
-      <td><?=$p['discount'] ?></td>
-      <td><?=$p['bar_code'] ?></td>
-      <td><?=$p['category_id'] ?></td>
-      <td><?=$p['category_name'] ?></td>
-      <td><?=$p['size_id'] ?></td>
-      <td><?=$p['size_name'] ?></td>
-      <td><?=$p['color_id'] ?></td>
-      <td><?=$p['color_name'] ?></td>
-      <td><?=$p['rating' ] ?></td>
-      <td><?=$p['rating_count'] ?></td>
-      <td><?=$p['is_recent' ] ?></td>
-      <td><?=$p['is_featured' ] ?></td>
+      <th scope="row"><?=$product['id'] ?></th>
+      <td><?=$product['name'] ?></td>
+      <td><?=$product['description'] ?></td>
+      <td><?=$product['image_url'] ?></td>
+      <td><?=$product['price'] ?></td>
+      <td><?=$product['discount'] ?></td>
+      <td><?=$product['bar_code'] ?></td>
+      <td><?=$product['category_id'] ?></td>
+      <td><?=$product['category_name'] ?></td>
+      <td><?=$product['size_id'] ?></td>
+      <td><?=$product['size_name'] ?></td>
+      <td><?=$product['color_id'] ?></td>
+      <td><?=$product['color_name'] ?></td>
+      <td><?=$product['rating' ] ?></td>
+      <td><?=$product['rating_count'] ?></td>
+      <td><?=$product['is_recent' ] ?></td>
+      <td><?=$product['is_featured' ] ?></td>
 
       <th scope="col">
-       <a class="btn btn-success" href="add-product.php?product_id=<?= $p['id'] ?>">
+       <a class="btn btn-success" href="add-product.php?product_id=<?= $product['id'] ?>">
        <h7 class="fa fa-pen text-white"></h7>
       </a>
       </th>
