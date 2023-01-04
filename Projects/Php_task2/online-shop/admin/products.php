@@ -68,7 +68,7 @@ $products = getProducts();
       <th scope="row"><?=$product['id'] ?></th>
       <td><?=$product['name'] ?></td>
       <td><?=$product['description'] ?></td>
-      <td><?=$product['image_url'] ?></td>
+      <td><img <?=$product['image_url'] ?> width="150" height="150"/></td>
       <td><?=$product['price'] ?></td>
       <td><?=$product['discount'] ?></td>
       <td><?=$product['bar_code'] ?></td>
